@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<title>Kilograms to Grams Weight Converter</title>
+<body>
+
+<h2> Converter</h2>
+<p>Type a value in the Kilograms field to convert the value to Grams:</p>
+
+<p>
+  <label>Kilograms</label>
+  <input id="inputKilograms" type="number" placeholder="Kilograms" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+</p>
+<p>Grams: <span id="outputGrams"></span></p>
+
+<script>
+function weightConverter(valNum) {
+  document.getElementById("outputGrams").innerHTML=valNum*1000;
+}
+</script>
+
+</body>
+</html>
