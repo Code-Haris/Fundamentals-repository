@@ -1,3 +1,4 @@
+//Tried with swal
 swal({
   title: "Are you sure?",
   text: "You come across a strange house in the woods. Do you want to go in?",
