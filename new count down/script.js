@@ -1,5 +1,5 @@
 var timer;
-var listv="";
+var listv="0";
 function settimer()
 {
    
@@ -30,6 +30,11 @@ function settimer()
    clearInterval(timer);
    document.getElementById("timer_value").innerHTML = 'Reached!';
    return;
+  }
+  if(listv=="0"){
+    clearInterval(timer);
+    document.getElementById("timer_value").innerHTML = 'Enter or select a value!';
+    return;
   }
   var days = Math.floor(remain / day); // Get Remaining Days
   var hours = Math.floor((remain % day) / hour); // Get Remaining Hours
