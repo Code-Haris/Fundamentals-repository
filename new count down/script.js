@@ -47,20 +47,25 @@ $(document).ready(function(){
        
         listv=$(this).val();
         if(listv=="1"){
-        $("#month").val(3);
-        $("#year").val(2030);
-        $("#day").val(14);
+        $("#month").val(10);
+        $("#year").val(2019);
+        $("#day").val(10);
         }
        if (listv=="2"){
         
-        $("#month").val(4);
-        $("#year").val(2020);
-        $("#day").val(14);}
+        $("#month").val(11);
+        $("#year").val(2019);
+        $("#day").val(1);}
         if (listv=="3"){
         
-            $("#month").val(10);
+            $("#month").val(12);
             $("#year").val(2019);
-            $("#day").val(6);}
+            $("#day").val(8);}
+            if (listv=="4"){
+        
+                $("#month").val(12);
+                $("#year").val(2019);
+                $("#day").val(24);}
         
         
         
