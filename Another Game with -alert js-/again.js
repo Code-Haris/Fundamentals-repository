@@ -1,3 +1,5 @@
+//This is JavaScript
+
 function playGame() {
 	var enterCabin = confirm("You across a strange house in the woods. Do you want to go in?");
 
