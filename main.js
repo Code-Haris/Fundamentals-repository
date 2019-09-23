@@ -1,4 +1,4 @@
-//Adding this for Git
+
 var images = document.getElementById("images"); 
 var text = document.getElementById("text"); 
 var buttonBox = document.getElementById('buttonBox');
