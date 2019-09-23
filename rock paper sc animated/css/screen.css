@@ -1,0 +1,135 @@
+
+body { 
+    background-color: #f0f0f0;
+    font: 100% / 162% verdana, arial, helvetica, sans-serif;
+    color: #444;
+    text-align: center;
+ }
+
+#container {
+    display: inline-block;
+    padding: 1em;
+    border: 0.062em solid #999;
+    border-radius: 0.75em;
+    box-shadow: inset 0 0 1em rgba( 0, 0, 0, 0.3 ), 0.4em 0.4em 0.4em rgba( 0, 0, 0, 0.3 );
+    background-color: #fff;
+    background-image: linear-gradient( to bottom, #fff, #fda );
+ }
+
+h1,h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+ }
+
+h2:last-of-type {
+    margin: 0;
+ }
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1em;
+    font-weight: normal;
+ }
+
+#pc, #player {
+    display: inline-block;
+    width: 5.625em;
+    height: 3.65em;
+    margin: 0 0.5em;
+    background-image: url( ../images/rockScissorsPaper.gif );
+    background-repeat: no-repeat;
+    vertical-align: middle;
+ }
+
+.noplay { 
+    background-position: -999em -999em; 
+ }
+
+.rock1 { 
+    background-position: 0 0.65em;
+ }
+
+.paper1 {
+    background-position: 0 -2.9em;
+ }
+
+.scissor1 { 
+    background-position: 0 -6.625em;
+ }
+
+.scissor2 { 
+    background-position: -5.55em 0.5em;
+ }
+
+.rock2 { 
+    background-position: -5.55em -2.65em;
+ }
+.paper2 { 
+    background-position: -5.55em -6.25em;
+ }
+
+fieldset {
+    border: 0;
+ }
+
+fieldset:nth-of-type(1) div {
+    display: inline-block;
+ }
+
+fieldset:nth-of-type(1) input {
+    margin-right: 0.5em;;
+ }
+
+label, input[type="radio"] {
+    cursor: pointer;
+ }
+
+#play {
+    padding: 0.5em 0.5em;
+    font-size: 1em;
+    cursor: pointer;
+ }
+
+#message {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5em;
+    border: 0;
+    background-color: transparent;
+    font-size: 1em;
+    text-align: center;
+ }  
+  
+#pc-score, #player-score {
+    width: 2em;
+    margin-left: 0.5em;
+    text-align: center;
+ }
+
+.rotate {
+    transition: 2s ease-in-out;
+    transform: rotateX( 360deg ) rotateY( 360deg );
+ }
+.rotate1 {
+    transition: 2s ease-in-out;
+    transform: rotateZ( 360deg );
+ }
+
+@media ( max-width: 24em ) {
+
+h2, #pc, #player {
+    display: block;
+    margin: auto;
+  }
+
+fieldset:nth-of-type(1) div {
+    display: block;
+  }
+
+fieldset:nth-of-type(1) label {
+    display: inline-block;
+    width: 5em;
+    text-align: left;
+  }
+ }

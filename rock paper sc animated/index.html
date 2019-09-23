@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+
+<title>Rock, paper, scissors</title>
+
+<link rel="stylesheet" href="css/screen.css" media="screen">
+
+</head>
+<body> 
+
+<div id="container">
+
+  <h1>Rock, paper, scissors</h1>
+
+  <span>p.c:</span>
+
+  <div id="pc" class="noplay"></div>
+
+  <span>you:</span>
+
+  <div id="player" class="noplay"></div>
+
+  <form id="game">
+
+   <fieldset>
+
+    <h2>your choice:</h2>
+
+    <div>
+     <label for="paper">paper:</label>
+     <input id="paper" type="radio" name="r0" value="paper2">
+    </div><div>
+     <label for="rock">rock:</label>
+     <input id="rock" type="radio" name="r0" value="rock2">
+   </div><div>
+     <label for="scissors">scissors:</label>
+     <input id="scissors" type="radio" name="r0" value="scissor2">
+   </div>
+
+   </fieldset><fieldset>
+
+    <input id="play" type="button" value="play the p.c." disabled>
+
+  </fieldset><fieldset>
+
+    <h2>score:</h2>
+
+    <input id="message" type="text" readonly>
+    <label for="pc-score">pc:</label>
+    <input id="pc-score" type="text" readonly>
+    <label for="player-score">you:</label>
+    <input id="player-score" type="text" readonly>
+
+  </fieldset>
+
+ </form>
+<!-- #container --></div>
+
+<script src="scripts/game.js"></script>
+
+</body>
+</html>
