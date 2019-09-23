@@ -1,7 +1,8 @@
 var timer;
-var listv;
+var listv="";
 function settimer()
 {
+   
  clearInterval(timer);
 
  var timer_month=document.getElementById("month").value;
@@ -21,6 +22,7 @@ function settimer()
  var day = hour * 24; // Total Hour In One Day
 
  function showtimer() {
+    
   var now = new Date();
   var remain = end - now; // Get The Difference Between Current and entered date time
   if(remain < 0) 
@@ -38,6 +40,7 @@ function settimer()
   document.getElementById("timer_value").innerHTML += hours + 'Hrs ';
   document.getElementById("timer_value").innerHTML += minutes + 'Mins ';
   document.getElementById("timer_value").innerHTML += seconds + 'Secs';
+  
  }
  timer = setInterval(showtimer, 1000); // Display Timer In Every 1 Sec
 }
@@ -66,7 +69,10 @@ $(document).ready(function(){
                 $("#month").val(12);
                 $("#year").val(2019);
                 $("#day").val(24);}
-        
+                
+                
+                
+       
         
         
     })
