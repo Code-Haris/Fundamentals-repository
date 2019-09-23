@@ -1,3 +1,5 @@
+//Another File js
+
 function playGame() {
 var enterHouse = confirm ("You come across a strange house in the woods. Do you want to go in?");
 
