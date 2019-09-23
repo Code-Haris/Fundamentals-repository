@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="style.css" >
+        <h1 id="header1"> Date countdown</h1>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body><center>
+    <div class="selecter">
+        <select class="list" id="myl">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            </select>
+        </div>
+    </center>
+ 
+<div class="box">
+   
+        <div class="col-3 input-effect">
+ <input class="effect-16" type="text" id="month" placeholder="" value="0"><label>Month</label><span class="focus-border"></span>
+ </div>
+ <div class="col-3 input-effect">
+ <input class="effect-16" type="text" id="day" placeholder="" value="0"><label>Day</label><span class="focus-border"></span>
+</div>
+<div class="col-3 input-effect">
+ <input class="effect-16" type="text" id="year" placeholder=""><label>Year</label><span class="focus-border"></span>
+</div>
+ <div class="col-3 input-effect">
+ <input class="effect-16" type="text" id="hour" placeholder=""><label>Hour</label><span class="focus-border"></span>
+</div>
+<div class="col-3 input-effect">
+ <input class="effect-16" type="text" id="min" placeholder=""><label>Min</label><span class="focus-border"></span>
+</div>
+ <button class="myButton" type="button" value="Submit" onclick="settimer();"> calculate</button>
+ 
+</div>
+<div class="result">
+        <p id="timer_value"></p>
+       </div>
+
+</body>
+</html>
