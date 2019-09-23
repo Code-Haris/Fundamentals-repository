@@ -1,4 +1,4 @@
- // User choice is this!
+ // User choice
         var userChoice = prompt("Do you choose rock, paper or scissors?");
         if (! userChoice) {
             // User choice was undefined
